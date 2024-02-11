@@ -13,10 +13,7 @@ def groupAnagrams(strs):
         else:
             anagrams[word].append(strs[i])
     # after forming such dict return values of all keys as one array
-    answer = []
-    for key in anagrams:
-        answer.append(anagrams[key])
-    return answer
+    return anagrams.values()
 
 
 strs = ["eat","tea","tan","ate","nat","bat"]
