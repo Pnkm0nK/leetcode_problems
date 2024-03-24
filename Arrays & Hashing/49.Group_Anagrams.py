@@ -3,7 +3,6 @@ def groupAnagrams(strs):
     # sort all words to then check if they are equal or not. Equal words are anagrams
     for word in strs:
         sorted_words.append(sorted(list(word)))
-    groups = []
     anagrams = {}
     # use dict to group the words by anagrams
     for i, word in enumerate(sorted_words):
